@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	font-size: 20px;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+	background-color: #ffe;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+
+}
+
+.header {
+	text-align: center;
+	padding: 30px;
+}
+
+.btn {
+	width: 10%;
+	text-align: center;
+	text-decoration: none;
+	background-color: white;	
+	font-size: 20px;
+	padding: 8px;
+	border: 1px solid green;
+	color: green;
+	margin: 5px 5px;
+	transition: color 0.3s;
+	background-color: 0.3s;
+}
+
+.btn:hover {
+	background-color: green;
+	color: white;
+}
+
+#balls button, #chest button {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: #4CAF50;
+	border: none;
+ 	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition: opacity 0.5s;
+	outline: none;
+}
+
+#balls button:hover {
+	background-color: white;
+	color: green;
+	border: 1px solid green;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 20%;
+	height: 15px;
+	border-radius: 5px;   
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: green;
+    cursor: pointer;
+}
+
+.info {
+	float: right;
+	padding-top: 15px;
+	font-weight: 700;
+}
+
+.in {
+	display: inline;
+	margin-left: 75px;
+}

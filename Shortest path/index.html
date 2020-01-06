@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Shortest path </title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+<body onload="onLoad()">
+	<div id="demo">
+		<div class="main">
+			<label for="source"> Source: </label>
+			<select id="source" onchange="onChangeSource(this)"> </select>
+			<label for="destination"> Destination: </label>
+			<select id="destination" onchange="onChangeDestination(this)"> </select>
+		</div>
+		<div>
+			<div class="break"> </div>
+			<div class="response">
+				<h1 id="result"></h1>
+				<h2 id="path"></h2>	
+			</div>
+		</div>
+		<div class="add">
+			<div class="break"></div>
+				<label for="A">Source: </label>
+				<input id="A" type="text" name="A" placeholder="Source" required>
+				<label for="B">Destination: </label>
+				<input id="B" type="text" placeholder="Destination" required="">
+				<label for="length">Distance in km: </label>
+				<input min="0" id="length" type="number" placeholder="1000" required="">
+				<br>
+				<label for="bi">Bi-directional: </label><input id="bi" type="checkbox">
+				<br>
+				<button onclick="addNewRoad()"> Submit </button>
+		</div>
+	</div>
+
+</body>
+</html>

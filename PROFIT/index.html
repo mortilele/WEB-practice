@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> LoL KeK Cheburek </title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="icon" href="logo.ico" type="image/x-icon"/>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="style.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div>
+  <ul class ="left">
+  	<li> <a class="round" onclick="document.getElementById('LOL').style.display='block'"href = "#sendinvite"> <span class="glyphicon glyphicon-send"></span> </a> </li>
+  	<li><p class = "underbutton">Кинуть инвайт</p></li>
+  	<li> <a class="add"  onclick="document.getElementById('id02').style.display='block'" href = "#addresource"> <span class="glyphicon glyphicon-plus"></span> </a> </li>
+ 	<li><p class = "underbutton">Добавить материал</p></li>
+  	<li> <a class="round" href = "#exit" style="position:absolute;bottom:40px;"> <span class="glyphicon glyphicon-log-out"></span> </a> </li>
+  	<li><p class = "underbutton" style="position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;bottom:10px;">Выход</p></li>
+	</ul>
+</div>
+  <ul class ="right">
+  	<h3 style="margin-left:5%;font-weight: bold;"> ФИЛЬТРЫ </h3>
+  	<label class="container">даяна
+  		<input type="checkbox" checked="checked">
+  		<span class="checkmark"></span>
+	</label>
+	<label class="container">Лидия
+ 		<input type="checkbox">
+  		<span class="checkmark"></span>
+	</label>
+	<label class="container">Маша
+  		<input type="checkbox">
+  		<span class="checkmark"></span>
+	</label>
+	<label class="container">Мира
+  		<input type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+
+	<br>
+
+  	<h3 style="margin-left:5%;font-weight: bold"> ХУИЛЬТРЫ </h3>
+  	<label class="container">Адиль
+  		<input type="checkbox" checked="checked">
+  		<span class="checkmark"></span>
+	</label>
+	<label class="container">Амоня
+ 		<input type="checkbox">
+  		<span class="checkmark"></span>
+	</label>
+	<label class="container">Ислам
+  		<input type="checkbox">
+  		<span class="checkmark"></span>
+	</label>
+	<label class="container">Ануар
+  		<input type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+  	</ul>
+	
+<div class = "content">
+	<br>
+	<div class="inner-addon left-addon">
+   		<i class="glyphicon glyphicon-search"></i>
+      	<input class = "search" class="form-control" type="search" placeholder="ИСКАТЬ" name="search">
+         <button class="predmet" type="submit"> ПО ПРЕДМЕТУ</button>
+  	</div>
+  	<br>
+  	<h3 style = "margin-left: 1%;font-weight: bold;"> ПОСЛЕДНИЕ ДОБАВЛЕННЫЕ</h3>
+	<div class="flex-container">
+  		<div>1</div>
+  		<div>2</div>
+  		<div>3</div>  
+  		<div>4</div>
+  		<div>5</div>
+  		<div>6</div>  
+  		<div>7</div>
+  		<div>8</div>
+  		<div>9</div>  
+  		<div>10</div>
+  		<div>11</div>
+  		<div>12</div>  
+	</div>
+	<br>	
+  	<h3 style = "margin-left: 1%;font-weight: bold;"> 14 МАРТА 2018</h3>
+	<div class="flex-container">
+  		<div>1</div>
+  		<div>2</div>
+  		<div>3</div>  
+	</div>
+  	<div class="footer">
+  		<p> Made by Akhmetov, ProFIT <span class = "glyphicon glyphicon-heart"> </span> </p>
+	</div>
+</div>
+
+	<div id="LOL" class="modal">
+  		<div class="modal-content animate">
+ 			<div class="wrapper">
+ 				<h3 style = "text-align: center;border-bottom: 3px solid black;margin:10px"> Поделись приватным ключом </h3>	
+  				<button class="form-control" id="keygen">Generate API Key</button>
+  				<input style="text-align: center;margin-top:8px;background-color: #d4d6d4;" class="form-control" id="apikey" type="text" value="" placeholder="Click on the button to generate a new API key ..."  />
+  				<button type="button" onclick="document.getElementById('LOL').style.display='none'" class="cancelbtn">Закрыть</button>
+  			</div>
+  		</div>
+    </div>
+
+	<div id = "id02" class="modal"> 
+		<div class = "modal-content animate">
+ 			<div class="modal-header" style="padding:20px 20px;">
+  				<h4><span class="glyphicon glyphicon-lock"></span> Заявка на добавления материала</h4> 
+ 			</div>
+		<div id="home" class="tab-pane fade in active">
+	<div class="modal-body" style="padding:20px 20px;">
+	<form role="form"> 
+		<div class="form-group">
+			<label for="student_login"><span class=" glyphicon glyphicon-king"></span> Логин студента</label>
+			<input name="student_login" class="form-control">
+		</div>
+	<div class="form-group">
+			<label for="university"><span class="  glyphicon glyphicon-bookmark"> </span> Выберите университет:</label>
+			<select class="form-control" name="university" required>
+		        <option>КБТУ</option> 
+		        <option>КАЗНУ</option> 
+		        <option>КАЗНИТУ</option> 
+		        <option>эх МУИТ</option> 
+		        <option>АЛМАЮ</option> 
+			</select>
+	</div>
+	<div class="form-group">
+			<label for="subject"><span class="glyphicon glyphicon-book"></span> Выберите предмет</label>
+			<select class="form-control" name="subject" required>     
+		        <option>Calculus I</option>
+		        <option>Calculus II</option>
+		        <option>Programming principles I</option>
+		        <option>Linear Algebra</option>
+		        <option>Discrete Structures</option>
+		        <option>ICT</option>
+		        <option>Probability and statistics</option>
+		        <option>History of Modern Kazakhstan</option>
+		        <option>Differential Equations</option>
+		</select>
+	</div>
+	<div class="form-group">
+			<label><span class="glyphicon glyphicon-calendar"></span> Дата</label>
+			<input class="form-control" type="date" name="date" min="2018-1-11" required>
+	</div>
+	<div class="form-group">
+			<label><span class="  glyphicon glyphicon-tags"></span> Примечание</label>
+			<textarea class="form-control" id="note" name="note" placeholder="Примечание" rows="3"></textarea>
+	</div>
+		<button type="submit" class="btn btn-success btn-block"><span class=" glyphicon glyphicon-ok"></span> Подать заявку</button>
+	</form>
+	</div>
+	</div>
+	</div>   
+</div>
+
+
+
+
+<script>
+	var modal1 = document.getElementById('LOL');
+
+	window.onclick = function(event) {
+    	if (event.target == modal1) {
+        	modal1.style.display = "none";
+    	}
+	}
+</script>
+
+<script>
+function generateUUID()
+{
+	var d = new Date().getTime();
+	
+	if( window.performance && typeof window.performance.now === "function" )
+	{
+		d += performance.now();
+	}
+	
+	var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c)
+	{
+		var r = (d + Math.random()*16)%16 | 0;
+		d = Math.floor(d/16);
+		return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+	});
+
+return uuid;
+}
+
+/**
+ * Generate new key and insert into input value
+ */
+$( '#keygen' ).on('click',function()
+{
+	$( '#apikey' ).val( generateUUID() );
+});
+</script>
+
+<script>
+	var modal2 = document.getElementById('id02');
+
+	window.onclick = function(event) {
+    	if (event.target == modal2) {
+        	modal2.style.display = "none";
+    	}
+	}
+</script>
+
+</body>
+</html>

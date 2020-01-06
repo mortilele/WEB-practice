@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess</title>
+	 <link rel="stylesheet" href="style.css">
+	 <script src="main.js"></script>
+</head>
+<body onload="main(100)">
+	<div class="main">
+		<div class="container"> 
+			<div class="header">
+				<h3> Welcome </h3>
+			</div>	
+			<div class="game">
+				<h4> Let's play a game! I made a number, try to guess what the number is?</h4>
+				<input class="slider" type="range" id = "Lower" min="1" max="100" value="100" oninput = "change(1)"> 
+				<span id = "LowerShow"> 100 </span> 
+				<button id = "play" class = "btn" onclick = "Play(1)"> Start </button>
+			</div>
+			<div id="balls"> </div>
+			<span class="info"> Lives left: <span id = "live"> 8 </span> </span>
+		</div>
+		<div class="container"> 
+			<div class="header">
+				<h3> Now, it's your turn to guess a number. I have to find them </h3>
+			</div>	
+			<div class="game">
+				<input class="slider" type="range" id = "Lower2" min="1" max="100" value="100" oninput = "change(2)">
+				<span id = "LowerShow2"> 100 </span> 
+				<button id = "play2" class = "btn" onclick = "Play(2)"> Start </button>
+				<div class="in">
+				<button id = "less" onclick="check(this)" class = "btn"> < </button>
+				<button id = "answer" onclick="check(this)" class = "btn"  > ? </button>
+				<button id = "more" onclick="check(this)" class = "btn"> > </button>
+				</div> 
+				<span class = "info"> Tries left: <span id = "tries"> 7 </span> </span>	
+			</div>
+			<div id="chest"> </div>
+			<br>
+		</div>
+	</div>
+</body>
+</html>
